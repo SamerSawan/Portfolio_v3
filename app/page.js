@@ -1,3 +1,5 @@
+import ExperienceCard from "./components/experienceCard";
+
 export default function Home() {
   return (
     <div className="bg-[#182734] text-slate-400">
@@ -27,14 +29,20 @@ export default function Home() {
           </div>
           <div className="mb-16">
             <h3>Experience</h3>
-            <div className="relative bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg shadow-2xl rounded-lg p-6 mx-auto">
-              <h2 className="text-slate-200 font-semibold mb-2">Specialist @ Apple</h2>
-              <div className="flex flex-col space-y-2">
-                <p>Consistently achieved top performance amongst peers by exceeding Trade-In targets by 20% and exceeding the 20% Activation target for three consecutive quarters</p>
-                <p>Demonstrated strong problem-solving skills by assessing customer needs and providing personalized solutions, resulting in a 95% customer satisfaction rate for five consecutive quarters</p>
-                <p>Organized and presented multiple store-wide trainings to help with onboarding new, seasonal and veteran specialists alike, ensuring best practices for various store initiatives and goals</p>
-              </div>
-            </div>
+            <ol class="group/list">
+              <li>
+                <ExperienceCard job={"Specialist @ Apple"} 
+                point1={"Consistently achieved top performance amongst peers by exceeding Trade-In targets by 20% and exceeding the 20% Activation target for three consecutive quarters"}
+                point2={"Demonstrated strong problem-solving skills by assessing customer needs and providing personalized solutions, resulting in a 95% customer satisfaction rate for five consecutive quarters"}
+                point3={"Organized and presented multiple store-wide trainings to help with onboarding new, seasonal and veteran specialists alike, ensuring best practices for various store initiatives and goals"}/>
+              </li>
+              <li>
+                <ExperienceCard job={"Software Developer Intern @ TheDevFactory.ai"}
+                point1={"Developed a customized chat completion model leveraging OpenAI's ChatGPT-4 API to integrate code snippets and SonarQube reports, enabling real-time feedback and suggestions to users"}
+                point2={"Enhanced model performance through iterative refinement of prompts and adjustments to API interactions, ensuring accurate and valuable responses aligned with user queries"}
+                point3={"Proposed and implemented innovative strategies to optimize the AI code reviewer's functionality, focusing on delivering actionable insights based on industry best practices and software design principles"}/>
+              </li>
+            </ol>
           </div>
           <div className="mb-16">
             <h3>Projects</h3>
