@@ -1,4 +1,6 @@
 import ExperienceCard from "./components/experienceCard";
+import ProjectCard from "./components/projectCard";
+import TechnicalPoint from "./components/technicalPoint";
 
 export default function Home() {
   return (
@@ -46,6 +48,12 @@ export default function Home() {
           </div>
           <div className="mb-16">
             <h3>Projects</h3>
+            <ProjectCard title={"Splendor"}
+            point1={"Developed backend game rules and logic in Java, integrating it with the frontend using REST API calls"}
+            point2={"Implemented user authentication y integrating the backend with a provided Lobby Service"}
+            point3={"Wrote comprehensive unit tests for all API calls to ensure functionality and reliability"}
+            point4={"Containerized the frontend, backend and database with Docker for ease of deployment"}
+            techPoints={["Java", "JavaScript", "REST", "Maven", "Docker", "JUnit", "Spring", "Boot", "Git"]}/>
           </div>
           <div>Made with nextjs and tailwindcss</div>
         </div>
