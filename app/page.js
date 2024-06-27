@@ -20,7 +20,7 @@ export default function Home() {
         <div className="py-24 w-1/2 flex flex-col justify-center items-center overflow-auto">
           <div className="mb-16">
             <p className="mb-4">
-              For my high school graduation project in 2017, I decided I wanted to learn how to make video games, so I made a simple brick breaker game. Since then, I’ve switched out of health sciences and graduated from McGill University with a bachelor’s degree in Software Engineering. I’ve had the privilege of participating in various hackathons, game jams and working at a start-up.
+              For my high school graduation project in 2017, I decided I wanted to learn how to make video games, so I made a simple brick breaker game. Since then, I’ve switched out of health sciences and graduated from McGill University with a bachelor’s degree in Software Engineering. I’ve had the privilege of participating in various hackathons, game jams, working at a start-up and getting an AWS cloud practitioner certification.
             </p>
             <p className="mb-4">
               My main focus as a new grad is continuing my learning journey and building good programming habits. I’ve recently been enjoying game development a lot, but I also like to make mobile apps and web apps. In my free time, I participate in Game Jams so that I can meet new people and learn new skills.
@@ -48,12 +48,19 @@ export default function Home() {
           </div>
           <div className="mb-16">
             <h3>Projects</h3>
+            <ProjectCard title={"Standy's Mountain of Doubts"} 
+            point1={"My submission for HealthyGamerGG's Mental Health May Hackathon was a precision platformer where the main character, Standy, learns to meditate to improve focus and navigate a complex map. The game was developed in GDScript and Godot, utilizing a sophisticated state machine to manage character and enemy behaviors through various state transitions. This state machine handles states such as running, idling, climbing, and jumping, enabling pixel-precise movement and mechanics like coyote jumping."}
+            techPoints={["GDScript", "Godot", "Aseprite"]}/>
             <ProjectCard title={"Splendor"}
-            point1={"Developed backend game rules and logic in Java, integrating it with the frontend using REST API calls"}
-            point2={"Implemented user authentication y integrating the backend with a provided Lobby Service"}
-            point3={"Wrote comprehensive unit tests for all API calls to ensure functionality and reliability"}
-            point4={"Containerized the frontend, backend and database with Docker for ease of deployment"}
+            point1={"For my senior capstone project at McGill, I developed backend game rules and logic in Java, seamlessly integrating it with the frontend through REST API calls. I implemented user authentication by connecting the backend with a provided Lobby Service, ensuring secure and reliable access. To maintain high code quality, I wrote comprehensive unit tests for all API calls, guaranteeing functionality and reliability. Additionally, I containerized the frontend, backend, and database using Docker, facilitating easy deployment and scalability. For academic integrity purposes, I can't publicly share the project. Reach out to me if you'd like to see it!"}
             techPoints={["Java", "JavaScript", "REST", "Maven", "Docker", "JUnit", "Spring", "Boot", "Git"]}/>
+            <ProjectCard title={"Discord Poll Bot"} 
+            point1={"I developed a Discord 'Poll Bot' as part of a talk I gave at the HealthyGamer Tech Community, aimed at teaching users how to create their own Discord bots. The bot was designed to build Discord's polling functionality from the ground up, providing a practical example to illustrate key concepts. During the talk, I covered essential topics such as file management and maintaining clean, organized code. Additionally, I delved into specific functionalities in discord.js, including the implementation of buttons, embeds, modals, and more, offering a comprehensive guide for attendees to understand and apply these features in their own projects."}
+            techPoints={['discord.js', 'nodejs']}/>
+            <ProjectCard title={"Personal Recipe App"}
+            point1={"I designed and built a recipe app that enables users to create, view, and delete recipes, as well as manage their groceries. By combining Axios for efficient API calls to Firebase and React Context, I created a seamless and user-friendly experience. I implemented advanced search functionality that allows users to filter recipes based on category, cooking time, affordability, ingredients, and name. Additionally, I developed language switching capabilities from English to Arabic and integrated iOS VoiceOver for enhanced accessibility."}
+            techPoints={[]}
+            />
           </div>
           <div>Made with nextjs and tailwindcss</div>
         </div>
