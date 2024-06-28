@@ -19,7 +19,7 @@ export default function Home() {
               <Navbar></Navbar>
             </div>
           </div>
-          <div className="mt-96">
+          <div className="fixed bottom-20">
             <FontAwesomeIcon className="mr-4" icon={faGithub} size="2x" /> 
             <FontAwesomeIcon className="mr-4" icon={faLinkedin} size="2x" />
             <FontAwesomeIcon className="mr-4" icon={faInstagram} size="2x" />
