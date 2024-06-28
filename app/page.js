@@ -1,6 +1,10 @@
+import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import ExperienceCard from "./components/experienceCard";
 import ProjectCard from "./components/projectCard";
-import TechnicalPoint from "./components/technicalPoint";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import Navbar from "./components/navBar";
 
 export default function Home() {
   return (
@@ -11,13 +15,18 @@ export default function Home() {
             <h1 className="text-4xl text-slate-200 font-bold">Samer Sawan</h1>
             <h2 className="mt-3 text-lg">Software Developer</h2>
             <p className="mt-4 max-w-xs">I bring innovative ideas to life</p>
-            <div className="mt-16">Navigation</div>
+            <div className="mt-6">
+              <Navbar></Navbar>
+            </div>
           </div>
           <div className="mt-96">
-            Socials
+            <FontAwesomeIcon className="mr-4" icon={faGithub} size="2x" /> 
+            <FontAwesomeIcon className="mr-4" icon={faLinkedin} size="2x" />
+            <FontAwesomeIcon className="mr-4" icon={faInstagram} size="2x" />
+            <FontAwesomeIcon className="mr-4" icon={faEnvelope} size="2x" />
           </div>
         </div>
-        <div className="py-24 w-1/2 flex flex-col justify-center items-center overflow-auto">
+        <div id="About" className="py-24 w-1/2 flex flex-col justify-center items-center overflow-auto">
           <div className="mb-16">
             <p className="mb-4">
               For my high school graduation project in 2017, I decided I wanted to learn how to make video games, so I made a simple brick breaker game. Since then, I’ve switched out of health sciences and graduated from McGill University with a bachelor’s degree in Software Engineering. I’ve had the privilege of participating in various hackathons, game jams, working at a start-up and getting an AWS cloud practitioner certification.
@@ -29,7 +38,7 @@ export default function Home() {
               When I’m not doing software related activities, I like to rock climb with my friends, read and play video games.
             </p>
           </div>
-          <div className="mb-16">
+          <div id="Experience" className="mb-16">
             <h3>Experience</h3>
             <ol class="group/list">
               <li>
@@ -46,7 +55,7 @@ export default function Home() {
               </li>
             </ol>
           </div>
-          <div className="mb-16">
+          <div id="Projects" className="mb-16">
             <h3>Projects</h3>
             <ProjectCard title={"Standy's Mountain of Doubts"} 
             point1={"My submission for HealthyGamerGG's Mental Health May Hackathon was a precision platformer where the main character, Standy, learns to meditate to improve focus and navigate a complex map. The game was developed in GDScript and Godot, utilizing a sophisticated state machine to manage character and enemy behaviors through various state transitions. This state machine handles states such as running, idling, climbing, and jumping, enabling pixel-precise movement and mechanics like coyote jumping."}
@@ -56,10 +65,10 @@ export default function Home() {
             techPoints={["Java", "JavaScript", "REST", "Maven", "Docker", "JUnit", "Spring", "Boot", "Git"]}/>
             <ProjectCard title={"Discord Poll Bot"} 
             point1={"I developed a Discord 'Poll Bot' as part of a talk I gave at the HealthyGamer Tech Community, aimed at teaching users how to create their own Discord bots. The bot was designed to build Discord's polling functionality from the ground up, providing a practical example to illustrate key concepts. During the talk, I covered essential topics such as file management and maintaining clean, organized code. Additionally, I delved into specific functionalities in discord.js, including the implementation of buttons, embeds, modals, and more, offering a comprehensive guide for attendees to understand and apply these features in their own projects."}
-            techPoints={['discord.js', 'nodejs']}/>
+            techPoints={['Discord.js', 'Node.js']}/>
             <ProjectCard title={"Personal Recipe App"}
-            point1={"I designed and built a recipe app that enables users to create, view, and delete recipes, as well as manage their groceries. By combining Axios for efficient API calls to Firebase and React Context, I created a seamless and user-friendly experience. I implemented advanced search functionality that allows users to filter recipes based on category, cooking time, affordability, ingredients, and name. Additionally, I developed language switching capabilities from English to Arabic and integrated iOS VoiceOver for enhanced accessibility."}
-            techPoints={[]}
+            point1={"I designed and built a recipe app that enables users to create, view, and delete recipes, as well as manage their groceries. By combining Axios for efficient API calls to Firebase and React Context, I created a seamless and user-friendly experience. Additionally, I integrated iOS VoiceOver for enhanced accessibility."}
+            techPoints={["React Native", "Axios", "React Context", "Firebase", "Figma"]}
             />
           </div>
           <div>Made with nextjs and tailwindcss</div>
