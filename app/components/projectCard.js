@@ -43,7 +43,7 @@ const ProjectCard = ({title, point1, point2, point3, point4, techPoints}) => {
         backdrop-filter hover:shadow-xl rounded-lg p-6 mx-auto">
           <div className="inside">
             <h2 className="text-slate-200 font-semibold mb-2">{title}</h2>
-            <div className="flex flex-col space-y-2">
+            <div className="z-10 flex flex-col space-y-2">
                 <p>{point1}</p>
                 <p>{point2}</p>
                 <p>{point3}</p>
