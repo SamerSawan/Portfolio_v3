@@ -1,0 +1,129 @@
+@property --bgrotate {
+    initial-value: 120deg;
+    inherits: false;
+    syntax: "<angle>";
+  }
+  @property --bgrotate2 {
+    initial-value: 255deg;
+    inherits: false;
+    syntax: "<angle>";
+  }
+  @property --text {
+    initial-value: 220deg;
+    inherits: false;
+    syntax: "<angle>";
+  }
+  
+  :root {
+    --ar: 0.718;
+    --br: 4.55% / 3.5%;
+    --hl: 0;
+    --bg: hsl(var(--canvas), 15%, 12%);
+    --t: all .66s
+      linear(
+        0,
+        0.007,
+        0.028 2.1%,
+        0.112 4.6%,
+        0.224 6.9%,
+        0.604 14.2%,
+        0.713,
+        0.803,
+        0.879,
+        0.939,
+        0.985 26.2%,
+        1.019 28.9%,
+        1.034 30.7%,
+        1.045,
+        1.051 34.8%,
+        1.053 37.2%,
+        1.046 41.6%,
+        1.012 54.7%,
+        1.001 62.8%,
+        0.997 73%,
+        1
+      )
+  }
+  
+  .card {
+    position: relative;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px, 0px 0px, 50% 50%, 0px 0px, 0px 0px;
+    background-blend-mode: color-dodge, normal, normal, normal, normal;
+    animation: glow-bg 44s linear infinite;
+    transform: translate3d(0, 0, 0.1px);
+    z-index: 1;
+  }
+  .card:hover {
+    --hl: 1;
+  }
+  
+  .card::before,
+  .card::after,
+  .inside {
+    border-radius: inherit;
+  }
+  
+  .inside {
+    border-radius: inherit;
+    overflow: hidden;
+  }
+  
+  .inside::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: 
+      radial-gradient(
+        farthest-corner circle at var(--pointer-x) var(--pointer-y),
+        hsl(113, 63%, 93%) 12%,
+        hsla(208, 37%, 15%, .2) 30%
+      );
+    mix-blend-mode: overlay;
+    filter: brightness(1) contrast(1.2);
+    opacity: var(--hl);
+    transition: var(--t);
+  }
+  
+  .card::after {
+    background: inherit;
+    inset: -10px;
+    scale: 0.8;
+    filter: blur(36px) brightness(1) contrast(0.85) saturate(1.4);
+    z-index: 0;
+    transition: var(--t);
+  }
+  
+  .card:hover::after {
+    scale: 0.9;
+    filter: blur(36px) brightness(1) contrast(1) saturate(1);
+  }
+  
+  .card::before {
+    content: "";
+    inset: 0;
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 10px 20px -5px;
+    z-index: 1;
+  }
+  
+  @keyframes glow-bg {
+    0% {
+      --bgrotate: 0deg;
+      --bgrotate2: 0deg;
+      --text: 90deg;
+    }
+    25% {
+      --bgrotate2: 360deg;
+      --text: 260deg;
+    }
+    50% {
+      --bgrotate2: 720deg;
+    }
+    100% {
+      --bgrotate: 720deg;
+      --bgrotate2: 0deg;
+      --text: 90deg;
+    }
+  }
+  
