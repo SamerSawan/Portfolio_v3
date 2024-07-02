@@ -1,13 +1,52 @@
+"use client";
+
+import React, { useEffect } from 'react';
+import "./projectCard.css";
+
 const ExperienceCard = ({ job, point1, point2, point3 }) => {
+    useEffect(() => {
+        const cardUpdate = (e) => {
+          const $card = e.currentTarget;
+          var pos = [e.clientX, e.clientY];
+          e.preventDefault();
+          if (e.type === 'touchmove') {
+            pos = [e.touches[0].clientX, e.touches[0].clientY];
+          }
+          var dimensions = $card.getBoundingClientRect();
+          var l = pos[0] - dimensions.left;
+          var t = pos[1] - dimensions.top;
+          var h = dimensions.height;
+          var w = dimensions.width;
+          var px = Math.abs((100 / w) * l);
+          var py = Math.abs((100 / h) * t);
+    
+          $card.style.setProperty('--pointer-x', `${px}%`);
+          $card.style.setProperty('--pointer-y', `${py}%`);
+        };
+    
+        const cards = document.querySelectorAll('.card');
+    
+        cards.forEach(card => {
+          card.addEventListener('mousemove', cardUpdate);
+          card.addEventListener('touchmove', cardUpdate);
+    
+          return () => {
+            card.removeEventListener('mousemove', cardUpdate);
+            card.removeEventListener('touchmove', cardUpdate);
+          };
+        });
+      }, []);
     return (
-        <div className="mb-10 relative transition hover:bg-[#2E485C]/50 
+        <div className="card group mb-10 relative transition hover:bg-[#2E485C]/50 
         hover:bg-opacity-10 hover:backdrop-blur-sm hover:bg-clip-padding 
         backdrop-filter hover:shadow-xl rounded-lg p-6 mx-auto">
-            <h2 className="text-slate-200 font-semibold mb-2">{job}</h2>
-            <div className="flex flex-col space-y-2">
-            <p>{point1}</p>
-            <p>{point2}</p>
-            <p>{point3}</p>
+            <div className="inside">
+                <h2 className="group-hover:text-[#8ce9b1] text-slate-200 font-semibold mb-2">{job}</h2>
+                <div className="flex flex-col space-y-2">
+                <p>{point1}</p>
+                <p>{point2}</p>
+                <p>{point3}</p>
+            </div>
             </div>
         </div>
     );

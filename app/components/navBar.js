@@ -20,27 +20,27 @@ const Navbar = () => {
         end: "bottom 40%",
         onEnter: () => {
           if (activeItem) {
-            activeItem.classList.remove("bg-slate-400"); // Reset previous active item
+            activeItem.classList.remove("bg-slate-400");
           }
           activeItem = listItem;
-          activeItem.classList.add("bg-slate-400"); // Set current item
+          activeItem.classList.add("bg-slate-400");
         },
         onLeave: () => {
           if (activeItem === listItem) {
-            activeItem.classList.remove("bg-slate-400"); // Reset when scrolling back up
+            activeItem.classList.remove("bg-slate-400");
             activeItem = null;
           }
         },
         onEnterBack: () => {
           if (activeItem) {
-            activeItem.classList.remove("bg-slate-400"); // Reset previous active item
+            activeItem.classList.remove("bg-slate-400");
           }
           activeItem = listItem;
-          activeItem.classList.add("bg-slate-400"); // Set current item
+          activeItem.classList.add("bg-slate-400"); 
         },
         onLeaveBack: () => {
           if (activeItem === listItem) {
-            activeItem.classList.remove("bg-slate-400"); // Reset when scrolling back up
+            activeItem.classList.remove("bg-slate-400");
             activeItem = null;
           }
         }

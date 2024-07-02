@@ -1,9 +1,9 @@
 "use client";
-import TechnicalPoint from "./TechnicalPoint";
+import TechnicalPoint from './TechnicalPoint';
 import React, { useEffect } from 'react';
-import "./projectCard.css";
+import './projectCard.css';
 
-const ProjectCard = ({title, point1, point2, point3, point4, techPoints}) => {
+const ProjectCard = ({ title, point1, point2, point3, point4, techPoints, href }) => {
   useEffect(() => {
     const cardUpdate = (e) => {
       const $card = e.currentTarget;
@@ -26,7 +26,7 @@ const ProjectCard = ({title, point1, point2, point3, point4, techPoints}) => {
 
     const cards = document.querySelectorAll('.card');
 
-    cards.forEach(card => {
+    cards.forEach((card) => {
       card.addEventListener('mousemove', cardUpdate);
       card.addEventListener('touchmove', cardUpdate);
 
@@ -37,25 +37,35 @@ const ProjectCard = ({title, point1, point2, point3, point4, techPoints}) => {
     });
   }, []);
 
-    return (
-        <div className="card mb-10 relative transition hover:bg-[#2E485C]/50 
+  const handleClick = (e) => {
+    e.preventDefault();
+    window.open(href, '_blank');
+  };
+
+  return (
+    <a href={href} onClick={handleClick} className="no-underline">
+      <div
+        className="card group mb-10 relative transition hover:bg-[#2E485C]/50 
         hover:bg-opacity-10 hover:backdrop-blur-sm hover:bg-clip-padding 
-        backdrop-filter hover:shadow-xl rounded-lg p-6 mx-auto">
-          <div className="inside">
-            <h2 className="text-slate-200 font-semibold mb-2">{title}</h2>
-            <div className="z-10 flex flex-col space-y-2">
-                <p>{point1}</p>
-                <p>{point2}</p>
-                <p>{point3}</p>
-                <p>{point4}</p>
-            </div>
-            <div className="flex flex-row space-x-2 mt-4">
+        backdrop-filter hover:shadow-xl rounded-lg p-6 mx-auto cursor-pointer"
+      >
+        <div className="inside">
+          <h2 className="group-hover:text-[#8ce9b1] text-slate-200 font-semibold mb-2">{title}</h2>
+          <div className="z-10 flex flex-col space-y-2">
+            <p>{point1}</p>
+            <p>{point2}</p>
+            <p>{point3}</p>
+            <p>{point4}</p>
+          </div>
+          <div className="flex flex-row space-x-2 mt-4">
             {techPoints.map((tech, index) => (
-                    <TechnicalPoint key={index} tech={tech} />
-                ))}
-            </div>
-            </div>
+              <TechnicalPoint key={index} tech={tech} />
+            ))}
+          </div>
         </div>
-    )
-}
+      </div>
+    </a>
+  );
+};
+
 export default ProjectCard;
