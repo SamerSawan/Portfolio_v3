@@ -16,18 +16,26 @@ export default function Home() {
             <h2 className="mt-3 text-lg">Software Developer</h2>
             <p className="mt-4 max-w-xs">I bring innovative ideas to life</p>
             <div className="mt-6">
-              <Navbar></Navbar>
+              <Navbar />
             </div>
           </div>
           <div className="fixed bottom-20">
-            <FontAwesomeIcon className="mr-4" icon={faGithub} size="2x" /> 
-            <FontAwesomeIcon className="mr-4" icon={faLinkedin} size="2x" />
-            <FontAwesomeIcon className="mr-4" icon={faInstagram} size="2x" />
-            <FontAwesomeIcon className="mr-4" icon={faEnvelope} size="2x" />
+            <a href="https://github.com/SamerSawan" target="_blank">
+              <FontAwesomeIcon className="mr-4 hover:text-[#42d17b]" icon={faGithub} size="2x" />
+            </a>
+            <a href="https://www.linkedin.com/in/samersawan1/" target="_blank">
+              <FontAwesomeIcon className="mr-4 hover:text-[#42d17b]" icon={faLinkedin} size="2x" />
+            </a>
+            <a href="https://www.instagram.com/samersawan1/" target="_blank">
+              <FontAwesomeIcon className="mr-4 hover:text-[#42d17b]" icon={faInstagram} size="2x" />
+            </a>
+            <a href="mailto:me@samersawan.com">
+              <FontAwesomeIcon className="mr-4 hover:text-[#42d17b]" icon={faEnvelope} size="2x" />
+            </a>
           </div>
         </div>
-        <div id="About" className="py-24 w-1/2 flex flex-col justify-center items-center overflow-auto">
-          <div className="mb-16">
+        <div className="py-24 w-1/2 flex flex-col justify-center items-center overflow-auto">
+          <div id="About" className="mb-16 section">
             <p className="mb-4">
               For my high school graduation project in 2017, I decided I wanted to learn how to make video games, so I made a simple brick breaker game. Since then, I’ve switched out of health sciences and graduated from McGill University with a bachelor’s degree in Software Engineering. I’ve had the privilege of participating in various hackathons, game jams, working at a start-up and getting an AWS cloud practitioner certification.
             </p>
@@ -35,12 +43,12 @@ export default function Home() {
               My main focus as a new grad is continuing my learning journey and building good programming habits. I’ve recently been enjoying game development a lot, but I also like to make mobile apps and web apps. In my free time, I participate in Game Jams so that I can meet new people and learn new skills.
             </p>
             <p className="mb-4">
-              When I’m not doing software related activities, I like to rock climb with my friends, read and play video games.
+              In my free time, I'm learning the piano, rock climbing, reading or playing video games with my friends.
             </p>
           </div>
-          <div id="Experience" className="mb-16">
+          <div id="Experience" className="mb-16 section">
             <h3>Experience</h3>
-            <ol class="group/list">
+            <ol className="group/list">
               <li>
                 <ExperienceCard job={"Specialist @ Apple"} 
                 point1={"Consistently achieved top performance amongst peers by exceeding Trade-In targets by 20% and exceeding the 20% Activation target for three consecutive quarters"}
@@ -55,7 +63,7 @@ export default function Home() {
               </li>
             </ol>
           </div>
-          <div id="Projects" className="mb-16">
+          <div id="Projects" className="mb-16 section">
             <h3>Projects</h3>
             <ProjectCard title={"Standy's Mountain of Doubts"} 
             point1={"My submission for HealthyGamerGG's Mental Health May Hackathon was a precision platformer where the main character, Standy, learns to meditate to improve focus and navigate a complex map. The game was developed in GDScript and Godot, utilizing a sophisticated state machine to manage character and enemy behaviors through various state transitions. This state machine handles states such as running, idling, climbing, and jumping, enabling pixel-precise movement and mechanics like coyote jumping."}

@@ -5,3 +5,13 @@
 html {
   scroll-behavior: smooth;
 }
+
+:root {
+  --color-bg: #151E1B; /* eukalyptus-green-950 */
+  --color-text: #F5F8F6; /* eukalyptus-green-50 */
+}
+
+[data-theme='light'] {
+  --color-bg: #F9F7F3; /* beige-50 */
+  --color-text: #30231A; /* beige-950 */
+}
