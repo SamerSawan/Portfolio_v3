@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react';
 import "./projectCard.css";
 
-const ExperienceCard = ({ job, point1, point2, point3 }) => {
+const ExperienceCard = ({ job, point1, point2, point3, href }) => {
     useEffect(() => {
         const cardUpdate = (e) => {
           const $card = e.currentTarget;
@@ -36,19 +36,27 @@ const ExperienceCard = ({ job, point1, point2, point3 }) => {
           };
         });
       }, []);
+
+      const handleClick = (e) => {
+        e.preventDefault();
+        window.open(href, '_blank');
+      };
+
     return (
-        <div className="card group mb-10 relative transition hover:bg-[#2E485C]/50 
-        hover:bg-opacity-10 hover:backdrop-blur-sm hover:bg-clip-padding 
-        backdrop-filter hover:shadow-xl rounded-lg p-6 mx-auto">
-            <div className="inside">
-                <h2 className="group-hover:text-[#8ce9b1] text-slate-200 font-semibold mb-2">{job}</h2>
-                <div className="flex flex-col space-y-2">
-                <p>{point1}</p>
-                <p>{point2}</p>
-                <p>{point3}</p>
+        <a href={href} onClick={handleClick} className="no-underline">
+            <div className="card group mb-10 relative transition hover:bg-[#2E485C]/50 
+            hover:bg-opacity-10 hover:backdrop-blur-sm hover:bg-clip-padding 
+            backdrop-filter hover:shadow-xl rounded-lg p-6 mx-auto cursor-pointer">
+                <div className="inside">
+                    <h2 className="group-hover:text-[#8ce9b1] text-slate-200 font-semibold mb-2">{job}</h2>
+                    <div className="flex flex-col space-y-2">
+                    <p>{point1}</p>
+                    <p>{point2}</p>
+                    <p>{point3}</p>
+                </div>
+                </div>
             </div>
-            </div>
-        </div>
+        </a>
     );
   };
   
