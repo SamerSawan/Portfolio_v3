@@ -1,5 +1,5 @@
 "use client";
-import TechnicalPoint from './TechnicalPoint';
+import TechnicalPoint from './technicalPoint';
 import React, { useEffect } from 'react';
 import './projectCard.css';
 

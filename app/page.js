@@ -5,10 +5,13 @@ import ExperienceCard from "./components/experienceCard";
 import ProjectCard from "./components/projectCard";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "./components/navBar";
+import StarrySky from './components/starrySky';
+
 
 export default function Home() {
   return (
     <div className="bg-[#182734] text-slate-400">
+      <StarrySky />
       <div className="flex mx-auto min-h-screen max-w-screen-xl">
         <div className="py-24 w-1/2 flex flex-col justify-between items-center text-center sticky top-0 h-screen">
           <div>

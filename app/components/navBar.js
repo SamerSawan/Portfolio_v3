@@ -16,8 +16,8 @@ const Navbar = () => {
 
       ScrollTrigger.create({
         trigger: section,
-        start: "top 40%",
-        end: "bottom 40%",
+        start: "top 30%",
+        end: "bottom 30%",
         onEnter: () => {
           if (activeItem) {
             activeItem.classList.remove("!bg-slate-400");
