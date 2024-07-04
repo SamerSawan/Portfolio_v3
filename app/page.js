@@ -6,6 +6,7 @@ import ProjectCard from "./components/projectCard";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "./components/navBar";
 import StarrySky from './components/starrySky';
+import PixelArt from "./components/pixelArt";
 
 
 export default function Home() {
@@ -89,6 +90,24 @@ export default function Home() {
             point1={"I designed and built a recipe app that enables users to create, view, and delete recipes, as well as manage their groceries. By combining Axios for efficient API calls to Firebase and React Context, I created a seamless and user-friendly experience. Additionally, I integrated iOS VoiceOver for enhanced accessibility."}
             techPoints={["React Native", "Axios", "React Context", "Firebase", "Figma"]} href={"https://github.com/SamerSawan/RecipeApp"}
             />
+          </div>
+          <div id="Art" className="mb-16 section w-full">
+            <h2 className="mb-8 font-medium text-lg text-slate-400">Art</h2>
+            <div>
+              <p className="mb-8">
+                One thing I've always found difficult is Art. I always thought I had no talent for it and never gave myself a chance. 
+                More recently, thanks to various mentors and people in my life, I've gained the courage to try things that make me uncomfortable, 
+                which has vastly increased my motivation and confidence to try new things. 
+                As a result, I've made some video game assets that I am quite proud of, and you can see them here below. 
+                I will be updating this section frequently, as I continue to make pixel art, and eventually I'll include some piano pieces that I'm currently learning
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-4 justify-between">
+              <PixelArt src="https://samerportfoliobucket.s3.us-east-2.amazonaws.com/RockGuy.gif" alt="Sentient Rock walks forward" text="Sentient Rock Guy walks" />
+              <PixelArt src="https://samerportfoliobucket.s3.us-east-2.amazonaws.com/attackAnimation_RockGuy.gif" alt="Sentient Rock atacks by propelling itself off the floor and throwing it's fist forward" text="Sentient Rock Guy attacks"/>
+              <PixelArt src="https://samerportfoliobucket.s3.us-east-2.amazonaws.com/merchant.gif" alt="Merchant smokes Shisha" text="A merchant smoking a shisha (or hookah)"/>
+              <PixelArt src="https://samerportfoliobucket.s3.us-east-2.amazonaws.com/GAME+HEALTH+BAR.gif" alt="Video Game Health Bar in the shape of a sword" text="A sword shaped health bar with a broken sword hilt as a base" />
+            </div>
           </div>
           <div>Made with nextjs and tailwindcss</div>
         </div>
