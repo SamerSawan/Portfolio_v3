@@ -45,9 +45,9 @@ const ProjectCard = ({ title, point1, point2, point3, point4, techPoints, href }
   return (
     <a href={href} onClick={handleClick} className="no-underline">
       <div
-        className="card group mb-10 relative transition hover:bg-[#2E485C]/50 
-        hover:bg-opacity-10 hover:backdrop-blur-sm hover:bg-clip-padding 
-        backdrop-filter hover:shadow-xl rounded-lg p-6 mx-auto cursor-pointer"
+        className="card group mb-10 relative transition bg-[#2E485C]/10 
+        bg-opacity-10 backdrop-blur-sm bg-clip-padding 
+        backdrop-filter shadow-xl rounded-lg p-6 mx-auto cursor-pointer"
       >
         <div className="inside">
           <h2 className="group-hover:text-[#8ce9b1] text-slate-200 font-semibold mb-2">{title}</h2>

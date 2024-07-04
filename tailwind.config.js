@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,7 +15,10 @@ module.exports = {
       },
       boxShadow: {
         'glass': '0 8px 32px 0 rgba(31,38,135,0.37)'
-      }
+      },
+      fontFamily: {
+        'sans': ['"Proxima Nova"', ...defaultTheme.fontFamily.sans],
+      },
     },
   },
   plugins: [],

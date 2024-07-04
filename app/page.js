@@ -13,11 +13,11 @@ export default function Home() {
     <div className="bg-[#182734] text-slate-400">
       <StarrySky />
       <div className="flex mx-auto min-h-screen max-w-screen-xl">
-        <div className="py-24 w-1/2 flex flex-col justify-between items-center text-center sticky top-0 h-screen">
+        <div className="py-24 w-1/2 flex flex-col justify-between items-center sticky top-0 h-screen">
           <div>
-            <h1 className="text-4xl text-slate-200 font-bold">Samer Sawan</h1>
-            <h2 className="mt-3 text-lg">Software Developer</h2>
-            <p className="mt-4 max-w-xs">I bring innovative ideas to life</p>
+            <h1 className="text-5xl text-slate-200 tracking-tight font-bold">Samer Sawan</h1>
+            <h2 className="mt-3 font-medium text-slate-200 text-xl">Software Developer</h2>
+            <p className="mt-4 max-w-xs">I bring fun and innovative ideas to life</p>
             <div className="mt-6">
               <Navbar />
             </div>
@@ -40,18 +40,30 @@ export default function Home() {
         <div className="py-24 w-1/2 flex flex-col justify-center items-center overflow-auto">
           <div id="About" className="mb-16 section">
             <p className="mb-4">
-              For my high school graduation project in 2017, I decided I wanted to learn how to make video games, so I made a simple brick breaker game. Since then, I’ve switched out of health sciences and graduated from McGill University with a bachelor’s degree in Software Engineering. I’ve had the privilege of participating in various hackathons, game jams, working at a start-up and getting an AWS cloud practitioner certification.
+              For my high school graduation project in 2017, I decided I wanted to learn how to make video games, so I made a simple brick breaker game. 
+              Since then, I’ve switched out of health sciences and graduated from <a href={"https://mcgill.ca"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">McGill University</a> with a bachelor’s degree in Software Engineering. 
+              I’ve had the privilege of participating in various hackathons, game jams, working at a <a href={"https://www.thedevfactory.ai/"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">start-up</a> and getting an AWS cloud practitioner certification.
             </p>
             <p className="mb-4">
-              My main focus as a new grad is continuing my learning journey and building good programming habits. I’ve recently been enjoying game development a lot, but I also like to make mobile apps and web apps. In my free time, I participate in Game Jams so that I can meet new people and learn new skills.
+              My main focus as a new grad is continuing my learning journey and building good programming habits. 
+              I’ve recently been enjoying game development a lot, but I also like to make mobile apps and web apps. 
+              In my free time, I participate in Game Jams so that I can meet new people and learn new skills.
             </p>
             <p className="mb-4">
               In my free time, I'm learning the piano, rock climbing, reading or playing video games with my friends.
             </p>
           </div>
           <div id="Experience" className="mb-16 section">
-            <h3>Experience</h3>
+            <h2 className="mb-10 font-medium text-lg text-slate-400">Experience</h2>
             <ol className="group/list">
+              
+              <li>
+                <ExperienceCard job={"Software Developer Intern @ TheDevFactory.ai"}
+                point1={"Developed a customized chat completion model leveraging OpenAI's ChatGPT-4 API to integrate code snippets and SonarQube reports, enabling real-time feedback and suggestions to users"}
+                point2={"Enhanced model performance through iterative refinement of prompts and adjustments to API interactions, ensuring accurate and valuable responses aligned with user queries"}
+                point3={"Proposed and implemented innovative strategies to optimize the AI code reviewer's functionality, focusing on delivering actionable insights based on industry best practices and software design principles"}
+                href={"https://www.linkedin.com/company/the-devfactory/?originalSubdomain=ca"}/>
+              </li>
               <li>
                 <ExperienceCard job={"Specialist @ Apple"} 
                 point1={"Consistently achieved top performance amongst peers by exceeding Trade-In targets by 20% and exceeding the 20% Activation target for three consecutive quarters"}
@@ -59,18 +71,10 @@ export default function Home() {
                 point3={"Organized and presented multiple store-wide trainings to help with onboarding new, seasonal and veteran specialists alike, ensuring best practices for various store initiatives and goals"}
                 href={"https://www.apple.com/"}/>
               </li>
-              <li>
-                <ExperienceCard job={"Software Developer Intern @ TheDevFactory.ai"}
-                point1={"Developed a customized chat completion model leveraging OpenAI's ChatGPT-4 API to integrate code snippets and SonarQube reports, enabling real-time feedback and suggestions to users"}
-                point2={"Enhanced model performance through iterative refinement of prompts and adjustments to API interactions, ensuring accurate and valuable responses aligned with user queries"}
-                point3={"Proposed and implemented innovative strategies to optimize the AI code reviewer's functionality, focusing on delivering actionable insights based on industry best practices and software design principles"}
-                href={"https://www.linkedin.com/company/the-devfactory/?originalSubdomain=ca"}/>
-
-              </li>
             </ol>
           </div>
           <div id="Projects" className="mb-16 section">
-            <h3>Projects</h3>
+            <h2 className="mb-10 font-medium text-lg text-slate-400">Projects</h2>
             <ProjectCard title={"Standy's Mountain of Doubts"} 
             point1={"My submission for HealthyGamerGG's Mental Health May Hackathon was a precision platformer where the main character, Standy, learns to meditate to improve focus and navigate a complex map. The game was developed in GDScript and Godot, utilizing a sophisticated state machine to manage character and enemy behaviors through various state transitions. This state machine handles states such as running, idling, climbing, and jumping, enabling pixel-precise movement and mechanics like coyote jumping."}
             techPoints={["GDScript", "Godot", "Aseprite"]} href={"https://bappleboi.itch.io/standys-mountain-of-doubts"}/>

@@ -77,7 +77,7 @@
     background-image: 
       radial-gradient(
         farthest-corner circle at var(--pointer-x) var(--pointer-y),
-        hsla(200, 46%, 43%, .3) 12%,
+        hsla(200, 36%, 33%, .3) 12%,
         hsla(206, 33%, 27%, .2) 30%
       );
     mix-blend-mode: overlay;
