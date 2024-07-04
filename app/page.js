@@ -99,7 +99,7 @@ export default function Home() {
                 More recently, thanks to various mentors and people in my life, I've gained the courage to try things that make me uncomfortable, 
                 which has vastly increased my motivation and confidence to try new things. 
                 As a result, I've made some video game assets that I am quite proud of, and you can see them here below. 
-                I will be updating this section frequently, as I continue to make pixel art, and eventually I'll include some piano pieces that I'm currently learning
+                I will be updating this section frequently, as I continue to make pixel art, and eventually I'll include some piano pieces that I'm currently learning.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4 justify-between">
