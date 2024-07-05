@@ -13,7 +13,7 @@ import PixelArt from "./components/pixelArt";
 
 export default function Home() {
   return (
-    <div className="bg-[#182734] text-slate-400 mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0 2xl:py-48">
+    <div className="bg-[#182734] text-slate-400 mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
       <StarrySky />
       <div className="lg:flex lg:justify-between lg:gap-4">
         <div className="lg:py-24 lg:w-1/2 lg:flex lg:flex-col lg:justify-between lg:items-center lg:sticky lg:top-0 lg:max-h-screen">
