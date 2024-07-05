@@ -44,7 +44,7 @@ const ExperienceCard = ({ job, point1, point2, point3, href }) => {
 
     return (
         <a href={href} onClick={handleClick} className="no-underline">
-            <div className="card group mb-10 relative transition bg-[#2E485C]/10 
+            <div className="card group mb-10 transition bg-[#2E485C]/10 
             bg-opacity-10 backdrop-blur-sm bg-clip-padding 
             backdrop-filter shadow-xl rounded-lg p-6 mx-auto cursor-pointer">
                 <div className="inside">

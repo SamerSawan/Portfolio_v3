@@ -11,19 +11,19 @@ import PixelArt from "./components/pixelArt";
 
 export default function Home() {
   return (
-    <div className="bg-[#182734] text-slate-400">
+    <div className="bg-[#182734] text-slate-400 mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0 2xl:py-48">
       <StarrySky />
-      <div className="flex mx-auto min-h-screen max-w-screen-xl">
-        <div className="py-24 w-1/2 flex flex-col justify-between items-center sticky top-0 h-screen">
+      <div className="lg:flex lg:justify-between lg:gap-4">
+        <div className="lg:py-24 lg:w-1/2 lg:flex lg:flex-col lg:justify-between lg:items-center lg:sticky lg:top-0 lg:max-h-screen">
           <div>
             <h1 className="text-5xl text-slate-200 tracking-tight font-bold">Samer Sawan</h1>
             <h2 className="mt-3 font-medium text-slate-200 text-xl">Software Developer</h2>
             <p className="mt-4 max-w-xs">I bring fun and innovative ideas to life</p>
-            <div className="mt-6">
+            <div className="mt-6 hidden lg:block">
               <Navbar />
             </div>
           </div>
-          <div className="fixed bottom-20">
+          <div className="mt-4 lg:mt-0">
             <a href="https://github.com/SamerSawan" target="_blank">
               <FontAwesomeIcon className="mr-4 hover:text-[#42d17b]" icon={faGithub} size="2x" />
             </a>
@@ -38,7 +38,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="py-24 w-1/2 flex flex-col justify-center items-center overflow-auto">
+        <div className="pt-24 lg:py-24 lg:w-1/2 flex flex-col justify-center items-center overflow-auto">
           <div id="About" className="mb-16 section">
             <p className="mb-4">
               For my high school graduation project in 2017, I decided I wanted to learn how to make video games, so I made a simple brick breaker game. 
@@ -57,7 +57,6 @@ export default function Home() {
           <div id="Experience" className="mb-16 section">
             <h2 className="mb-10 font-medium text-lg text-slate-400">Experience</h2>
             <ol className="group/list">
-              
               <li>
                 <ExperienceCard job={"Software Developer Intern @ TheDevFactory.ai"}
                 point1={"Developed a customized chat completion model leveraging OpenAI's ChatGPT-4 API to integrate code snippets and SonarQube reports, enabling real-time feedback and suggestions to users"}
@@ -75,22 +74,32 @@ export default function Home() {
             </ol>
             <a href="/Resume.pdf" className="text-slate-200 underline hover:text-[#8ce9b1] cursor-pointer">View Full Résumé</a>
           </div>
-          <div id="Projects" className="mb-16 section">
+          <div id="Projects" className="mb-16 section w-full">
             <h2 className="mb-10 font-medium text-lg text-slate-400">Projects</h2>
-            <ProjectCard title={"Standy's Mountain of Doubts"} 
-            point1={"My submission for HealthyGamerGG's Mental Health May Hackathon was a precision platformer where the main character, Standy, learns to meditate to improve focus and navigate a complex map. The game was developed in GDScript and Godot, utilizing a sophisticated state machine to manage character and enemy behaviors through various state transitions. This state machine handles states such as running, idling, climbing, and jumping, enabling pixel-precise movement and mechanics like coyote jumping."}
-            techPoints={["GDScript", "Godot", "Aseprite"]} href={"https://bappleboi.itch.io/standys-mountain-of-doubts"}/>
+            <ol className="group/list">
+              <li>
+                <ProjectCard title={"Standy's Mountain of Doubts"} 
+              point1={"My submission for HealthyGamerGG's Mental Health May Hackathon was a precision platformer where the main character, Standy, learns to meditate to improve focus and navigate a complex map. The game was developed in GDScript and Godot, utilizing a sophisticated state machine to manage character and enemy behaviors through various state transitions. This state machine handles states such as running, idling, climbing, and jumping, enabling pixel-precise movement and mechanics like coyote jumping."}
+              techPoints={["GDScript", "Godot", "Aseprite"]} href={"https://bappleboi.itch.io/standys-mountain-of-doubts"}/>
+              </li>
+              <li>
             <ProjectCard title={"Splendor"}
             point1={"For my senior capstone project at McGill, I developed backend game rules and logic in Java, seamlessly integrating it with the frontend through REST API calls. I implemented user authentication by connecting the backend with a provided Lobby Service, ensuring secure and reliable access. To maintain high code quality, I wrote comprehensive unit tests for all API calls, guaranteeing functionality and reliability. Additionally, I containerized the frontend, backend, and database using Docker, facilitating easy deployment and scalability. For academic integrity purposes, I can't publicly share the project. Reach out to me if you'd like to see it!"}
             techPoints={["Java", "JavaScript", "REST", "Maven", "Docker", "JUnit", "Spring", "Boot", "Git"]}
             href={"https://www.mcgill.ca/deanofstudents/policies-procedures/code"}/>
+            </li>
+            <li>
             <ProjectCard title={"Discord Poll Bot"} 
             point1={"I developed a Discord 'Poll Bot' as part of a talk I gave at the HealthyGamer Tech Community, aimed at teaching users how to create their own Discord bots. The bot was designed to build Discord's polling functionality from the ground up, providing a practical example to illustrate key concepts. During the talk, I covered essential topics such as file management and maintaining clean, organized code. Additionally, I delved into specific functionalities in discord.js, including the implementation of buttons, embeds, modals, and more, offering a comprehensive guide for attendees to understand and apply these features in their own projects."}
             techPoints={['Discord.js', 'Node.js']} href={"https://github.com/SamerSawan/StatBot_v2"}/>
+            </li>
+            <li>
             <ProjectCard title={"Personal Recipe App"}
             point1={"I designed and built a recipe app that enables users to create, view, and delete recipes, as well as manage their groceries. By combining Axios for efficient API calls to Firebase and React Context, I created a seamless and user-friendly experience. Additionally, I integrated iOS VoiceOver for enhanced accessibility."}
             techPoints={["React Native", "Axios", "React Context", "Firebase", "Figma"]} href={"https://github.com/SamerSawan/RecipeApp"}
             />
+            </li>
+            </ol>
           </div>
           <div id="Art" className="mb-16 section w-full">
             <h2 className="mb-8 font-medium text-lg text-slate-400">Art</h2>
@@ -110,7 +119,7 @@ export default function Home() {
               <PixelArt src="https://samerportfoliobucket.s3.us-east-2.amazonaws.com/GAME+HEALTH+BAR.gif" alt="Video Game Health Bar in the shape of a sword" text="A sword shaped health bar with a broken sword hilt as a base" />
             </div>
           </div>
-          <div>Made with nextjs and tailwindcss</div>
+          <div>Made with NextJS, TailwindCSS, AnimeJS and GSAP</div>
         </div>
       </div>
     </div>

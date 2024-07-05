@@ -44,20 +44,15 @@ const ProjectCard = ({ title, point1, point2, point3, point4, techPoints, href }
 
   return (
     <a href={href} onClick={handleClick} className="no-underline">
-      <div
-        className="card group mb-10 relative transition bg-[#2E485C]/10 
-        bg-opacity-10 backdrop-blur-sm bg-clip-padding 
-        backdrop-filter shadow-xl rounded-lg p-6 mx-auto cursor-pointer"
-      >
+    <div className="card group mb-10 transition bg-[#2E485C]/10 
+    bg-opacity-10 backdrop-blur-sm bg-clip-padding 
+    backdrop-filter shadow-xl rounded-lg p-6 mx-auto cursor-pointer">
         <div className="inside">
-          <h2 className="group-hover:text-[#8ce9b1] text-slate-200 font-semibold mb-2">{title}</h2>
-          <div className="z-10 flex flex-col space-y-2">
+            <h2 className="group-hover:text-[#8ce9b1] text-slate-200 font-semibold mb-2">{title}</h2>
+            <div className="flex flex-col space-y-2">
             <p>{point1}</p>
-            <p>{point2}</p>
-            <p>{point3}</p>
-            <p>{point4}</p>
           </div>
-          <div className="flex flex-row space-x-2 mt-4">
+          <div className="flex flex-wrap gap-2 mt-4">
             {techPoints.map((tech, index) => (
               <TechnicalPoint key={index} tech={tech} />
             ))}
