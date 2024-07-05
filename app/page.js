@@ -42,16 +42,16 @@ export default function Home() {
           <div id="About" className="mb-16 section">
             <p className="mb-4">
               For my high school graduation project in 2017, I decided I wanted to learn how to make video games, so I made a simple brick breaker game. 
-              Since then, I’ve switched out of health sciences and graduated from <a href={"https://mcgill.ca"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">McGill University</a> with a bachelor’s degree in Software Engineering. 
-              I’ve had the privilege of participating in various hackathons, game jams, working at a <a href={"https://www.thedevfactory.ai/"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">start-up</a> and getting an AWS cloud practitioner certification.
+              Since then, I&rsquo;ve switched out of health sciences and graduated from <a href={"https://mcgill.ca"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">McGill University</a> with a bachelor&rsquo;s degree in Software Engineering. 
+              I&rsquo;ve had the privilege of participating in various hackathons, game jams, working at a <a href={"https://www.thedevfactory.ai/"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">start-up</a> and getting an AWS cloud practitioner certification.
             </p>
             <p className="mb-4">
               My main focus as a new grad is continuing my learning journey and building good programming habits. 
-              I’ve recently been enjoying game development a lot, but I also like to make mobile apps and web apps. 
+              I&rsquo;ve recently been enjoying game development a lot, but I also like to make mobile apps and web apps. 
               In my free time, I participate in Game Jams so that I can meet new people and learn new skills.
             </p>
             <p className="mb-4">
-              In my free time, I'm learning the piano, rock climbing, reading or playing video games with my friends.
+              In my free time, I&rsquo;m learning the piano, rock climbing, reading or playing video games with my friends.
             </p>
           </div>
           <div id="Experience" className="mb-16 section">
@@ -105,11 +105,11 @@ export default function Home() {
             <h2 className="mb-8 font-medium text-lg text-slate-400">Art</h2>
             <div>
               <p className="mb-8">
-                One thing I've always found difficult is Art. I always thought I had no talent for it and never gave myself a chance. 
-                More recently, thanks to various mentors and people in my life, I've gained the courage to try things that make me uncomfortable, 
+                One thing I&rsquo;ve always found difficult is Art. I always thought I had no talent for it and never gave myself a chance. 
+                More recently, thanks to various mentors and people in my life, I&rsquo;ve gained the courage to try things that make me uncomfortable, 
                 which has vastly increased my motivation and confidence to try new things. 
-                As a result, I've made some video game assets that I am quite proud of, and you can see them here below. 
-                I will be updating this section frequently, as I continue to make pixel art, and eventually I'll include some piano pieces that I'm currently learning.
+                As a result, I&rsquo;ve made some video game assets that I am quite proud of, and you can see them here below. 
+                I will be updating this section frequently, as I continue to make pixel art, and eventually I&rsquo;ll include some piano pieces that I&rsquo;m currently learning.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4 justify-between">
