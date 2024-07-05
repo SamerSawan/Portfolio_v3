@@ -18,7 +18,7 @@ export default function Home() {
       <div className="lg:flex lg:justify-between lg:gap-4">
         <div className="lg:py-24 lg:w-1/2 lg:flex lg:flex-col lg:justify-between lg:items-center lg:sticky lg:top-0 lg:max-h-screen">
           <div>
-            <h1 className="text-5xl text-slate-200 tracking-tight font-bold">Samer Sawan</h1>
+            <h1 className="text-5xl text-slate-200 tracking-tight font-bold">Sam Sawan</h1>
             <h2 className="mt-3 font-medium text-slate-200 text-xl">Software Developer</h2>
             <p className="mt-4 max-w-xs">I bring fun and innovative ideas to life</p>
             <div className="mt-6 hidden lg:block">

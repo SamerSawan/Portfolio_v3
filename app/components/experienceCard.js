@@ -4,38 +4,39 @@ import React, { useEffect } from 'react';
 import "./projectCard.css";
 
 const ExperienceCard = ({ job, point1, point2, point3, href }) => {
-    useEffect(() => {
-        const cardUpdate = (e) => {
-          const $card = e.currentTarget;
-          var pos = [e.clientX, e.clientY];
-          e.preventDefault();
-          if (e.type === 'touchmove') {
-            pos = [e.touches[0].clientX, e.touches[0].clientY];
-          }
-          var dimensions = $card.getBoundingClientRect();
-          var l = pos[0] - dimensions.left;
-          var t = pos[1] - dimensions.top;
-          var h = dimensions.height;
-          var w = dimensions.width;
-          var px = Math.abs((100 / w) * l);
-          var py = Math.abs((100 / h) * t);
-    
-          $card.style.setProperty('--pointer-x', `${px}%`);
-          $card.style.setProperty('--pointer-y', `${py}%`);
-        };
-    
-        const cards = document.querySelectorAll('.card');
-    
-        cards.forEach(card => {
-          card.addEventListener('mousemove', cardUpdate);
-          card.addEventListener('touchmove', cardUpdate);
-    
-          return () => {
-            card.removeEventListener('mousemove', cardUpdate);
-            card.removeEventListener('touchmove', cardUpdate);
-          };
-        });
-      }, []);
+  useEffect(() => {
+    const cardUpdate = (e) => {
+      const $card = e.currentTarget;
+      var pos = [e.clientX, e.clientY];
+      e.preventDefault();
+      if (e.type === 'touchmove') {
+        pos = [e.touches[0].clientX, e.touches[0].clientY];
+      }
+      var dimensions = $card.getBoundingClientRect();
+      var l = pos[0] - dimensions.left;
+      var t = pos[1] - dimensions.top;
+      var h = dimensions.height;
+      var w = dimensions.width;
+      var px = Math.abs((100 / w) * l);
+      var py = Math.abs((100 / h) * t);
+  
+      $card.style.setProperty('--pointer-x', `${px}%`);
+      $card.style.setProperty('--pointer-y', `${py}%`);
+    };
+  
+    const cards = document.querySelectorAll('.card');
+  
+    cards.forEach((card) => {
+      card.addEventListener('mousemove', cardUpdate);
+      card.addEventListener('touchmove', cardUpdate, { passive: true });
+  
+      return () => {
+        card.removeEventListener('mousemove', cardUpdate);
+        card.removeEventListener('touchmove', cardUpdate);
+      };
+    });
+  }, []);
+  
 
       const handleClick = (e) => {
         e.preventDefault();
@@ -46,7 +47,7 @@ const ExperienceCard = ({ job, point1, point2, point3, href }) => {
         <a href={href} onClick={handleClick} className="no-underline">
             <div className="card group mb-10 transition bg-[#2E485C]/10 
             bg-opacity-10 backdrop-blur-sm bg-clip-padding 
-            backdrop-filter shadow-xl rounded-lg p-6 mx-auto cursor-pointer">
+            backdrop-filter shadow-xl rounded-lg p-6 mx-auto cursor-pointer sm:pointer-events-none lg:pointer-events-auto">
                 <div className="inside">
                     <h2 className="group-hover:text-[#8ce9b1] text-slate-200 font-semibold mb-2">{job}</h2>
                     <div className="flex flex-col space-y-2">
