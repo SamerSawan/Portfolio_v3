@@ -73,7 +73,7 @@ export default function Home() {
                 href={"https://www.apple.com/"}/>
               </li>
             </ol>
-            <a className="text-slate-200 underline hover:text-[#8ce9b1] cursor-pointer">View Full Résumé</a>
+            <a href="/Resume.pdf" className="text-slate-200 underline hover:text-[#8ce9b1] cursor-pointer">View Full Résumé</a>
           </div>
           <div id="Projects" className="mb-16 section">
             <h2 className="mb-10 font-medium text-lg text-slate-400">Projects</h2>
