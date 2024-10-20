@@ -45,18 +45,18 @@ export default function Home() {
           <div id="About" className="mb-16 section">
             <p className="mb-4">
               For my high school graduation project in 2017, I decided I wanted to learn how to make video games, so I made a simple brick breaker game. 
-              Since then, I've switched out of health sciences and graduated from <a href={"https://mcgill.ca"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">McGill University</a> with a bachelor&rsquo;s degree in Software Engineering. 
-              I've had the privilege of participating in various hackathons, game jams, working at a <a href={"https://www.thedevfactory.ai/"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">start-up</a> and getting an AWS cloud practitioner certification.
+              Since then, I&rsquo;ve switched out of health sciences and graduated from <a href={"https://mcgill.ca"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">McGill University</a> with a bachelor&rsquo;s degree in Software Engineering. 
+              I&rsquo;ve had the privilege of participating in various hackathons, game jams, working at a <a href={"https://www.thedevfactory.ai/"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">start-up</a> and getting an AWS cloud practitioner certification.
             </p>
             <p className="mb-4">
               My main focus as a new grad is continuing my learning journey and building good programming habits.
-              I've recently been working on <a href="https://github.com/SamerSawan/Papyrus_v2" target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">a book tracking and book club app</a> for me and my friends. Throughout this journey,
-              I've experimented with Swift, Flutter and React Native, and I'm now working on developing the app with React Native
+              I&rsquo;ve recently been working on <a href="https://github.com/SamerSawan/Papyrus_v2" target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">a book tracking and book club app</a> for me and my friends. Throughout this journey,
+              I&rsquo;ve experimented with Swift, Flutter and React Native, and I&rsquo;m now working on developing the app with React Native
               as well as a web version using NextJS, TypeScript and NodeJS for a backend. In my free time, 
               I participate in Hackathons and Game Jams so that I can meet new people and learn new skills.
             </p>
             <p className="mb-4">
-              In my free time, I'm learning the piano, rock climbing, reading or playing video games with my friends.
+              In my free time, I&rsquo;m learning the piano, rock climbing, reading or playing video games with my friends.
             </p>
           </div>
           <div id="Experience" className="mb-16 section">
