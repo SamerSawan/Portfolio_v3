@@ -45,16 +45,18 @@ export default function Home() {
           <div id="About" className="mb-16 section">
             <p className="mb-4">
               For my high school graduation project in 2017, I decided I wanted to learn how to make video games, so I made a simple brick breaker game. 
-              Since then, I&rsquo;ve switched out of health sciences and graduated from <a href={"https://mcgill.ca"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">McGill University</a> with a bachelor&rsquo;s degree in Software Engineering. 
-              I&rsquo;ve had the privilege of participating in various hackathons, game jams, working at a <a href={"https://www.thedevfactory.ai/"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">start-up</a> and getting an AWS cloud practitioner certification.
+              Since then, I've switched out of health sciences and graduated from <a href={"https://mcgill.ca"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">McGill University</a> with a bachelor&rsquo;s degree in Software Engineering. 
+              I've had the privilege of participating in various hackathons, game jams, working at a <a href={"https://www.thedevfactory.ai/"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">start-up</a> and getting an AWS cloud practitioner certification.
             </p>
             <p className="mb-4">
-              My main focus as a new grad is continuing my learning journey and building good programming habits. 
-              I&rsquo;ve recently been enjoying game development a lot, but I also like to make mobile apps and web apps. 
-              In my free time, I participate in Game Jams so that I can meet new people and learn new skills.
+              My main focus as a new grad is continuing my learning journey and building good programming habits.
+              I've recently been working on <a href="https://github.com/SamerSawan/Papyrus_v2" target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">a book tracking and book club app</a> for me and my friends. Throughout this journey,
+              I've experimented with Swift, Flutter and React Native, and I'm now working on developing the app with React Native
+              as well as a web version using NextJS, TypeScript and NodeJS for a backend. In my free time, 
+              I participate in Hackathons and Game Jams so that I can meet new people and learn new skills.
             </p>
             <p className="mb-4">
-              In my free time, I&rsquo;m learning the piano, rock climbing, reading or playing video games with my friends.
+              In my free time, I'm learning the piano, rock climbing, reading or playing video games with my friends.
             </p>
           </div>
           <div id="Experience" className="mb-16 section">
@@ -62,16 +64,16 @@ export default function Home() {
             <ol className="group/list">
               <li>
                 <ExperienceCard job={"Software Developer Intern @ TheDevFactory.ai"}
-                point1={"Developed a customized chat completion model leveraging OpenAI's ChatGPT-4 API to integrate code snippets and SonarQube reports, enabling real-time feedback and suggestions to users"}
-                point2={"Enhanced model performance through iterative refinement of prompts and adjustments to API interactions, ensuring accurate and valuable responses aligned with user queries"}
-                point3={"Proposed and implemented innovative strategies to optimize the AI code reviewer's functionality, focusing on delivering actionable insights based on industry best practices and software design principles"}
+                point1={"Built a customized chat completion model leveraging OpenAI's ChatGPT-4 API to integrate code snippets and SonarQube reports, enabling real-time feedback and suggestions to users."}
+                point2={"Enhanced model performance through iterative refinement of prompts and adjustments to API interactions, resulting in a 10\% increase of response accuracy."}
+                point3={"Proposed and implemented innovative strategies to optimize the AI code reviewer's functionality, focusing on delivering actionable insights based on industry best practices and software design principles."}
                 href={"https://www.linkedin.com/company/the-devfactory/?originalSubdomain=ca"}/>
               </li>
               <li>
-                <ExperienceCard job={"Specialist @ Apple"} 
-                point1={"Consistently achieved top performance amongst peers by exceeding Trade-In targets by 20% and exceeding the 20% Activation target for three consecutive quarters"}
-                point2={"Demonstrated strong problem-solving skills by assessing customer needs and providing personalized solutions, resulting in a 95% customer satisfaction rate for five consecutive quarters"}
-                point3={"Organized and presented multiple store-wide trainings to help with onboarding new, seasonal and veteran specialists alike, ensuring best practices for various store initiatives and goals"}
+                <ExperienceCard job={"Technical Specialist @ Apple"} 
+                point1={"Exceeded the target of 3 technical support appointments per hour, consistently achieving an average of 4.3 appointments per hour by diagnosing technical issues, educating customers on product features and best practices, and resolving complex problems to ensure optimal device performance."}
+                point2={"Demonstrated strong problem-solving skills by assessing customer needs and providing personalized solutions, resulting in a 90\% customer satisfaction rate for four consecutive quarters."}
+                point3={"Organized and presented multiple store-wide trainings to help with onboarding new, seasonal and veteran specialists alike, resulting in a 20\% improvement of store-wide activation results."}
                 href={"https://www.apple.com/"}/>
               </li>
             </ol>
@@ -83,7 +85,7 @@ export default function Home() {
             <li>
               <ProjectCard title={"Athenaeum Book Club"}
               point1={"I designed and developed a React Native app for my book club to allow us to update each other on our progress and discuss our thoughts about what we were reading without having to organize a meetup, as it could sometimes be difficult for our large group to find a time to meet. I built Athenaeum using a component-based architecture, which made it significantly easier to maintain and scale up. Additioanlly, I used FireBase for user authentication and real-time data storage and retrieval. I'm also currently working on a web version with NextJS and TypeScript!"}
-              techPoints={["React Native", "FireBase", "Figma", "Google Books", "TypeScript", "React Native"]}
+              techPoints={["React Native", "FireBase", "Figma", "Google Books", "TypeScript"]}
               href={"https://github.com/SamerSawan/Papyrus_v2"}
               />
             </li>
