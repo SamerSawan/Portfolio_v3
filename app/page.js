@@ -80,8 +80,22 @@ export default function Home() {
           <div id="Projects" className="mb-16 section w-full">
             <h2 className="mb-10 font-medium text-lg text-slate-400">Projects</h2>
             <ol className="group/list">
-              <li>
-                <ProjectCard title={"Standy's Mountain of Doubts"} 
+            <li>
+              <ProjectCard title={"Athenaeum Book Club"}
+              point1={"I designed and developed a React Native app for my book club to allow us to update each other on our progress and discuss our thoughts about what we were reading without having to organize a meetup, as it could sometimes be difficult for our large group to find a time to meet. I built Athenaeum using a component-based architecture, which made it significantly easier to maintain and scale up. Additioanlly, I used FireBase for user authentication and real-time data storage and retrieval. I'm also currently working on a web version with NextJS and TypeScript!"}
+              techPoints={["React Native", "FireBase", "Figma", "Google Books", "TypeScript", "React Native"]}
+              href={"https://github.com/SamerSawan/Papyrus_v2"}
+              />
+            </li>
+            <li>
+              <ProjectCard title={"Unseen Alchemist"}
+              point1={"I led a team of 3 developers for the PirateJam 15 Game Jam to develop a 2D MetroidVania where you play as an Alchemist that has to solve puzzles by brewing a variety of different potions. I worked on the AI pathing and behaviour as well as the inventory systems that the player interacts with. Unseen Alchemist was in the top 3% of submissions, feel free to try it out!"}
+              techPoints={["GDScript", "Godot", "Aseprite"]}
+              href={["https://bappleboi.itch.io/unseen-alchemist"]}
+              />
+            </li>
+            <li>
+              <ProjectCard title={"Standy's Mountain of Doubts"} 
               point1={"My submission for HealthyGamerGG's Mental Health May Hackathon was a precision platformer where the main character, Standy, learns to meditate to improve focus and navigate a complex map. The game was developed in GDScript and Godot, utilizing a sophisticated state machine to manage character and enemy behaviors through various state transitions. This state machine handles states such as running, idling, climbing, and jumping, enabling pixel-precise movement and mechanics like coyote jumping."}
               techPoints={["GDScript", "Godot", "Aseprite"]} href={"https://bappleboi.itch.io/standys-mountain-of-doubts"}/>
               </li>
