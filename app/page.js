@@ -52,7 +52,7 @@ export default function Home() {
               My main focus as a new grad is continuing my learning journey and building good programming habits.
               I&rsquo;ve recently been working on <a href="https://github.com/SamerSawan/Papyrus_v2" target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">a book tracking and book club app</a> for me and my friends. Throughout this journey,
               I&rsquo;ve experimented with Swift, Flutter and React Native, and I&rsquo;m now working on developing the app with React Native
-              as well as a web version using NextJS, TypeScript and NodeJS for a backend. In my free time, 
+              as well as a web version using NextJS, TypeScript and Go for a backend. In my free time, 
               I participate in Hackathons and Game Jams so that I can meet new people and learn new skills.
             </p>
             <p className="mb-4">
@@ -71,9 +71,9 @@ export default function Home() {
               </li>
               <li>
                 <ExperienceCard job={"Technical Specialist @ Apple"} 
-                point1={"Exceeded the target of 3 technical support appointments per hour, consistently achieving an average of 4.3 appointments per hour by diagnosing technical issues, educating customers on product features and best practices, and resolving complex problems to ensure optimal device performance."}
-                point2={"Demonstrated strong problem-solving skills by assessing customer needs and providing personalized solutions, resulting in a 90\% customer satisfaction rate for four consecutive quarters."}
-                point3={"Organized and presented multiple store-wide trainings to help with onboarding new, seasonal and veteran specialists alike, resulting in a 20\% improvement of store-wide activation results."}
+                point1={"Demonstrated strong problem-solving and debugging skills by diagnosing issues for Apple hardware and software, resulting in a 90\% customer satisfaction rate for four consecutive quarters."}
+                point2={"Developed multiple text shortcuts that are now used store-wide during appointments to improve efficiency during note taking, resulting in a 10\% decrease in appointment duration."}
+                point3={"Developed a systematic debugging routine to isolate the root cause of various issues like connectivity errors, application interaction conflicts and system malfunctions, resulting in an improved overall efficiency during appointments."}
                 href={"https://www.apple.com/"}/>
               </li>
             </ol>
@@ -83,8 +83,8 @@ export default function Home() {
             <h2 className="mb-10 font-medium text-lg text-slate-400">Projects</h2>
             <ol className="group/list">
             <li>
-              <ProjectCard title={"Athenaeum Book Club"}
-              point1={"I designed and developed a React Native app for my book club to allow us to update each other on our progress and discuss our thoughts about what we were reading without having to organize a meetup, as it could sometimes be difficult for our large group to find a time to meet. I built Athenaeum using a component-based architecture, which made it significantly easier to maintain and scale up. Additioanlly, I used FireBase for user authentication and real-time data storage and retrieval. I'm also currently working on a web version with NextJS and TypeScript!"}
+              <ProjectCard title={"Bookmarkd"}
+              point1={"I designed and developed a React Native app for my book club to allow us to update each other on our progress and discuss our thoughts about what we were reading without having to organize a meetup, as it could sometimes be difficult for our large group to find a time to meet. I built Bookmarkd using a component-based architecture, which made it significantly easier to maintain and scale up. Additioanlly, I used FireBase for user authentication and real-time data storage and retrieval. I'm also currently working on a web version with NextJS and TypeScript, as well as a full backend in Go!"}
               techPoints={["React Native", "FireBase", "Figma", "Google Books", "TypeScript"]}
               href={"https://github.com/SamerSawan/Papyrus_v2"}
               />
@@ -117,6 +117,12 @@ export default function Home() {
             point1={"I designed and built a recipe app that enables users to create, view, and delete recipes, as well as manage their groceries. By combining Axios for efficient API calls to Firebase and React Context, I created a seamless and user-friendly experience. Additionally, I integrated iOS VoiceOver for enhanced accessibility."}
             techPoints={["React Native", "Axios", "React Context", "Firebase", "Figma"]} href={"https://github.com/SamerSawan/RecipeApp"}
             />
+            <li>
+              <ProjectCard title={"Gator"}
+              point1={"Gator is a CLI tool that I built as part of a boot.dev course on learning Go. It is a CLI tool that allows users to manage and browse RSS feeds, allowing users to fetch from RSS feeds and read posts."}
+              techPoints={["Go"]}
+              href={["https://github.com/SamerSawan/Gator"]}/>
+            </li>
             </li>
             </ol>
           </div>
