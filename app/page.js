@@ -49,11 +49,10 @@ export default function Home() {
               I&rsquo;ve had the privilege of participating in various hackathons, game jams, working at a <a href={"https://www.thedevfactory.ai/"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">start-up</a> and getting an AWS cloud practitioner certification.
             </p>
             <p className="mb-4">
-              My main focus as a new grad is continuing my learning journey and building good programming habits.
-              I&rsquo;ve recently been working on <a href="https://github.com/SamerSawan/Papyrus_v2" target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">a book tracking and book club app</a> for me and my friends. Throughout this journey,
-              I&rsquo;ve experimented with Swift, Flutter and React Native, and I&rsquo;m now working on developing the app with React Native
-              as well as a web version using NextJS, TypeScript and Go for a backend. In my free time, 
-              I participate in Hackathons and Game Jams so that I can meet new people and learn new skills.
+              As a new graduate, my main focus is continuing to learn and develop strong programming habits.
+              Recently, I built <a href="https://github.com/SamerSawan/bookmarkd" target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">a book logging website</a> for me and my friends to log our reads using Golang for the backend and NextJS + TypeScript for the frontend.  
+              I have extensive experience with multiple programming languages including Python, Java, TypeScript, Golang and C#.
+              Throughout my learning journey, I&rsquo;ve been using these programming languages to build cool projects, and I have also been working on expanding my knowledge of database and cloud related tools including PostgreSQL, SQLite, Google Cloud and AWS.
             </p>
             <p className="mb-4">
               In my free time, I&rsquo;m learning the piano, rock climbing, reading or playing video games with my friends.
@@ -84,9 +83,9 @@ export default function Home() {
             <ol className="group/list">
             <li>
               <ProjectCard title={"Bookmarkd"}
-              point1={"I designed and developed a React Native app for my book club to allow us to update each other on our progress and discuss our thoughts about what we were reading without having to organize a meetup, as it could sometimes be difficult for our large group to find a time to meet. I built Bookmarkd using a component-based architecture, which made it significantly easier to maintain and scale up. Additioanlly, I used FireBase for user authentication and real-time data storage and retrieval. I'm also currently working on a web version with NextJS and TypeScript, as well as a full backend in Go!"}
-              techPoints={["React Native", "FireBase", "Figma", "Google Books", "TypeScript"]}
-              href={"https://github.com/SamerSawan/Papyrus_v2"}
+              point1={"I designed and developed a book logging website for myself and my book club to allow us to update each other on our progress and discuss our thoughts about what we were reading. I built Bookmarkd using a component-based architecture using NextJS and TypeScript, which made it significantly easier to maintain and scale up. Additioanlly, I used Golang to build the backend REST API, and I built my very own relational database using PostgreSQL. The website is hosted using Vercel for the frontend and Google Cloud for the backend, feel free to try it out!"}
+              techPoints={["Go", "TypeScript", "PostgreSQL", "React", "NextJS", "Firebase", "Docker", "Figma"]}
+              href={"https://github.com/SamerSawan/bookmarkd"}
               />
             </li>
             <li>
