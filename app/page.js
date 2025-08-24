@@ -21,7 +21,7 @@ export default function Home() {
           <div>
             <h1 className="text-5xl text-slate-200 tracking-tight font-bold">Sam Sawan</h1>
             <h2 className="mt-3 font-medium text-slate-200 text-xl">Software Developer</h2>
-            <p className="mt-4 max-w-xs">I bring fun and innovative ideas to life</p>
+            <p className="mt-4 max-w-xs"></p>
             <div className="mt-6 hidden lg:block">
               <Navbar />
             </div>
@@ -44,18 +44,16 @@ export default function Home() {
         <div className="pt-24 lg:py-24 lg:w-1/2 flex flex-col justify-center items-center overflow-auto">
           <div id="About" className="mb-16 section">
             <p className="mb-4">
-              For my high school graduation project in 2017, I decided I wanted to learn how to make video games, so I made a simple brick breaker game. 
-              Since then, I&rsquo;ve switched out of health sciences and graduated from <a href={"https://mcgill.ca"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">McGill University</a> with a bachelor&rsquo;s degree in Software Engineering. 
-              I&rsquo;ve had the privilege of participating in various hackathons, game jams, working at a <a href={"https://www.thedevfactory.ai/"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">start-up</a> and getting an AWS cloud practitioner certification.
+              I’m a developer who cares about building clean, thoughtfully designed products that are intuitive and enjoyable to use.
             </p>
             <p className="mb-4">
-              As a new graduate, my main focus is continuing to learn and develop strong programming habits.
-              Recently, I built <a href="https://github.com/SamerSawan/bookmarkd" target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">a book logging website</a> for me and my friends to log our reads using Golang for the backend and NextJS + TypeScript for the frontend.  
-              I have extensive experience with multiple programming languages including Python, Java, TypeScript, Golang and C#.
-              Throughout my learning journey, I&rsquo;ve been using these programming languages to build cool projects, and I have also been working on expanding my knowledge of database and cloud related tools including PostgreSQL, SQLite, Google Cloud and AWS.
+              Today, I’m a Software Developer at <a href="https://www.netrevenue.io/" target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer hover:text-green-600">NetRevenue</a>, where I work on <span className="font-semibold">Salesvue.io</span>, a sales engagement platform designed to help teams manage leads, automate follow-ups, and streamline customer communication. My role involves building and maintaining core features, integrating third-party services, and ensuring the platform is reliable, scalable, and user-friendly.
             </p>
             <p className="mb-4">
-              In my free time, I&rsquo;m learning the piano, rock climbing, reading or playing video games with my friends.
+              In the past, I’ve designed and developed <a href="https://github.com/SamerSawan/bookmarkd" target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer hover:text-green-600">Bookmarkd</a>, a book club web app built with Node.js, React, Firebase, and a custom Go backend, which lets readers log books, share reviews, and connect with friends. I’ve also gained hands-on experience with languages like Python, Java, TypeScript, Go, and C#, and with tools such as PostgreSQL, SQLite, Google Cloud, and AWS.
+            </p>
+            <p className="mb-4">
+              When I’m not coding, you’ll usually find me reading, rock climbing, playing piano, or spending time with friends.
             </p>
           </div>
           <div id="Experience" className="mb-16 section">
