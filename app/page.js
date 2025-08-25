@@ -1,6 +1,6 @@
 "use client";
 
-import { faGithub, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import ExperienceCard from "./components/experienceCard";
@@ -17,69 +17,92 @@ export default function Home() {
     <StarrySky />
     <div className="bg-[#182734] text-slate-400 mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0 z-10">
       <div className="lg:flex lg:justify-between lg:gap-4">
-        <div className="lg:py-24 lg:w-1/2 lg:flex lg:flex-col lg:justify-between lg:items-center lg:sticky lg:top-0 lg:max-h-screen">
+        <div className="lg:py-24 lg:w-1/2 lg:flex lg:flex-col lg:justify-between lg:items-start lg:sticky lg:top-0 lg:max-h-screen">
           <div>
             <h1 className="text-5xl text-slate-200 tracking-tight font-bold">Sam Sawan</h1>
             <h2 className="mt-3 font-medium text-slate-200 text-xl">Software Developer</h2>
-            <p className="mt-4 max-w-xs">I bring fun and innovative ideas to life</p>
-            <div className="mt-6 hidden lg:block">
-              <Navbar />
-            </div>
+            <p className="mt-4 max-w-xs">I turn ideas into reliable, user-friendly software.</p>
+            <Navbar /> 
           </div>
-          <div className="mt-4 lg:mt-0">
-            <a href="https://github.com/SamerSawan" target="_blank">
-              <FontAwesomeIcon className="mr-4 hover:text-[#42d17b]" icon={faGithub} size="2x" />
+          <div className="mt-4 lg:mt-0 flex justify-center gap-6">
+            <a href="https://github.com/SamerSawan" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <FontAwesomeIcon className="hover:text-[#42d17b]" icon={faGithub} size="2x" />
             </a>
-            <a href="https://www.linkedin.com/in/samersawan1/" target="_blank">
-              <FontAwesomeIcon className="mr-4 hover:text-[#42d17b]" icon={faLinkedin} size="2x" />
+            <a href="https://www.linkedin.com/in/samersawan1/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <FontAwesomeIcon className="hover:text-[#42d17b]" icon={faLinkedin} size="2x" />
             </a>
-            <a href="https://www.instagram.com/samersawan1/" target="_blank">
-              <FontAwesomeIcon className="mr-4 hover:text-[#42d17b]" icon={faInstagram} size="2x" />
-            </a>
-            <a href="mailto:me@samersawan.com">
-              <FontAwesomeIcon className="mr-4 hover:text-[#42d17b]" icon={faEnvelope} size="2x" />
+            <a href="mailto:me@samersawan.com" aria-label="Mail">
+              <FontAwesomeIcon className="hover:text-[#42d17b]" icon={faEnvelope} size="2x" />
             </a>
           </div>
+
         </div>
         <div className="pt-24 lg:py-24 lg:w-1/2 flex flex-col justify-center items-center overflow-auto">
           <div id="About" className="mb-16 section">
             <p className="mb-4">
-              For my high school graduation project in 2017, I decided I wanted to learn how to make video games, so I made a simple brick breaker game. 
-              Since then, I&rsquo;ve switched out of health sciences and graduated from <a href={"https://mcgill.ca"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">McGill University</a> with a bachelor&rsquo;s degree in Software Engineering. 
-              I&rsquo;ve had the privilege of participating in various hackathons, game jams, working at a <a href={"https://www.thedevfactory.ai/"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">start-up</a> and getting an AWS cloud practitioner certification.
+              I&rsquo;m a developer who cares about building clean, thoughtfully designed products that are intuitive and enjoyable to use.
             </p>
             <p className="mb-4">
-              As a new graduate, my main focus is continuing to learn and develop strong programming habits.
-              Recently, I built <a href="https://github.com/SamerSawan/bookmarkd" target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer">a book logging website</a> for me and my friends to log our reads using Golang for the backend and NextJS + TypeScript for the frontend.  
-              I have extensive experience with multiple programming languages including Python, Java, TypeScript, Golang and C#.
-              Throughout my learning journey, I&rsquo;ve been using these programming languages to build cool projects, and I have also been working on expanding my knowledge of database and cloud related tools including PostgreSQL, SQLite, Google Cloud and AWS.
+              Today, I&rsquo;m a Software Developer at <a href="https://www.netrevenue.io/" target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer hover:text-green-200">NetRevenue</a>, where I work on <span href="https://www.salesvue.io/" className="text-slate-200 cursor-pointer hover:text-green-200">Salesvue.io</span>, a sales engagement platform designed to help teams manage leads, automate follow-ups, and streamline customer communication. My role involves building and maintaining core features, integrating third-party services, and ensuring the platform is reliable, scalable, and user-friendly.
             </p>
             <p className="mb-4">
-              In my free time, I&rsquo;m learning the piano, rock climbing, reading or playing video games with my friends.
+              In the past, I&rsquo;ve built <a href="https://github.com/SamerSawan/bookmarkd" target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer hover:text-green-200">Bookmarkd</a>, a book club app for sharing reads with friends, and a <a href="https://bappleboi.itch.io/unseen-alchemist" target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer hover:text-green-200">video game</a> during a game jam, along with other personal and hackathon projects. I also interned at <a href="https://www.thedevfactory.ai/" target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer hover:text-green-200">TheDevFactory</a>, earned my AWS Cloud Practitioner certification, and graduated from <a href={"https://mcgill.ca"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer hover:text-green-200">McGill University</a> in Software Engineering.
+            </p>
+
+
+            <p className="mb-4">
+              When I&rsquo;m not coding, you&rsquo;ll usually find me reading, rock climbing, playing piano, or spending time with friends.
             </p>
           </div>
           <div id="Experience" className="mb-16 section">
-            <h2 className="mb-10 font-medium text-lg text-slate-400">Experience</h2>
+            <h2 className="mb-10 text-2xl font-semibold text-slate-200 border-b border-slate-700 pb-2">
+              Experience
+            </h2>
+
             <ol className="group/list">
               <li>
-                <ExperienceCard job={"Software Developer Intern @ TheDevFactory.ai"}
-                point1={"Built a customized chat completion model leveraging OpenAI's ChatGPT-4 API to integrate code snippets and SonarQube reports, enabling real-time feedback and suggestions to users."}
-                point2={"Enhanced model performance through iterative refinement of prompts and adjustments to API interactions, resulting in a 10\% increase of response accuracy."}
-                point3={"Proposed and implemented innovative strategies to optimize the AI code reviewer's functionality, focusing on delivering actionable insights based on industry best practices and software design principles."}
-                href={"https://www.linkedin.com/company/the-devfactory/?originalSubdomain=ca"}/>
+                <ExperienceCard 
+                  job={"Software Developer @ NetRevenue"} 
+                  date={"Mar 2025 – Present"} 
+                  point1={"Build and maintain backend services for Salesvue.io, a sales engagement platform used to manage leads and automate workflows."}
+                  point2={"Design and implement integrations with third-party services such as Stripe and Whop, supporting subscription billing, membership synchronization, and API event processing."}
+                  point3={"Introduce and advocate for backend testing practices, improving release reliability and team confidence in deployments."}
+                  href={"https://www.netrevenue.io/"} 
+                />
               </li>
               <li>
-                <ExperienceCard job={"Technical Specialist @ Apple"} 
-                point1={"Demonstrated strong problem-solving and debugging skills by diagnosing issues for Apple hardware and software, resulting in a 90\% customer satisfaction rate for four consecutive quarters."}
-                point2={"Developed multiple text shortcuts that are now used store-wide during appointments to improve efficiency during note taking, resulting in a 10\% decrease in appointment duration."}
-                point3={"Developed a systematic debugging routine to isolate the root cause of various issues like connectivity errors, application interaction conflicts and system malfunctions, resulting in an improved overall efficiency during appointments."}
-                href={"https://www.apple.com/"}/>
+                <ExperienceCard 
+                  job={"Software Developer Intern @ TheDevFactory.ai"} 
+                  date={"Sep 2023 – Jan 2024"} 
+                  point1={"Developed features for an AI-powered code review tool that combined ChatGPT with SonarQube, delivering real-time insights to developers."}
+                  point2={"Refined model prompts and system behavior to improve accuracy and usefulness of automated code review feedback."}
+                  point3={"Collaborated in an agile environment to deliver production-ready features and enhancements."}
+                  href={"https://www.thedevfactory.ai/"} 
+                />
+              </li>
+              <li>
+                <ExperienceCard 
+                  job={"Technical Specialist @ Apple"} 
+                  date={"Jun 2022 – April 2025"} 
+                  point1={"Diagnose and resolve technical issues across Apple hardware and software, ensuring a high level of customer satisfaction."}
+                  point2={"Create and maintain internal shortcuts and routines to streamline team workflows, improving efficiency during customer appointments."}
+                  point3={"Apply systematic troubleshooting approaches to isolate root causes and deliver consistent, reliable support."}
+                  href={"https://www.apple.com/"} 
+                />
               </li>
             </ol>
+
             <a href="/Resume.pdf" className="text-slate-200 underline hover:text-[#8ce9b1] cursor-pointer">View Full Résumé</a>
           </div>
+
+
+
           <div id="Projects" className="mb-16 section w-full">
-            <h2 className="mb-10 font-medium text-lg text-slate-400">Projects</h2>
+          <h2 className="mb-10 text-2xl font-semibold text-slate-200 border-b border-slate-700 pb-2">
+            Projects
+          </h2>
+
+
             <ol className="group/list">
             <li>
               <ProjectCard title={"Bookmarkd"}
@@ -116,31 +139,26 @@ export default function Home() {
             point1={"I designed and built a recipe app that enables users to create, view, and delete recipes, as well as manage their groceries. By combining Axios for efficient API calls to Firebase and React Context, I created a seamless and user-friendly experience. Additionally, I integrated iOS VoiceOver for enhanced accessibility."}
             techPoints={["React Native", "Axios", "React Context", "Firebase", "Figma"]} href={"https://github.com/SamerSawan/RecipeApp"}
             />
+            </li>
             <li>
               <ProjectCard title={"Gator"}
               point1={"Gator is a CLI tool that I built as part of a boot.dev course on learning Go. It is a CLI tool that allows users to manage and browse RSS feeds, allowing users to fetch from RSS feeds and read posts."}
               techPoints={["Go"]}
               href={["https://github.com/SamerSawan/Gator"]}/>
             </li>
-            </li>
             </ol>
           </div>
           <div id="Art" className="mb-16 section w-full">
-            <h2 className="mb-8 font-medium text-lg text-slate-400">Art</h2>
+          <h2 className="mb-10 text-2xl font-semibold text-slate-200 border-b border-slate-700 pb-2">
+            Art
+          </h2>
             <div>
-              <p className="mb-8">
-                One thing I&rsquo;ve always found difficult is Art. I always thought I had no talent for it and never gave myself a chance. 
-                More recently, thanks to various mentors and people in my life, I&rsquo;ve gained the courage to try things that make me uncomfortable, 
-                which has vastly increased my motivation and confidence to try new things. 
-                As a result, I&rsquo;ve made some video game assets that I am quite proud of, and you can see them here below. 
-                I will be updating this section frequently, as I continue to make pixel art, and eventually I&rsquo;ll include some piano pieces that I&rsquo;m currently learning.
-              </p>
             </div>
             <div className="grid grid-cols-2 gap-4 justify-between">
-              <PixelArt src="https://samerportfoliobucket.s3.us-east-2.amazonaws.com/RockGuy.gif" alt="Sentient Rock walks forward" text="Sentient Rock Guy walks" />
-              <PixelArt src="https://samerportfoliobucket.s3.us-east-2.amazonaws.com/attackAnimation_RockGuy.gif" alt="Sentient Rock atacks by propelling itself off the floor and throwing it's fist forward" text="Sentient Rock Guy attacks"/>
-              <PixelArt src="https://samerportfoliobucket.s3.us-east-2.amazonaws.com/merchant.gif" alt="Merchant smokes Shisha" text="A merchant smoking a shisha (or hookah)"/>
-              <PixelArt src="https://samerportfoliobucket.s3.us-east-2.amazonaws.com/GAME+HEALTH+BAR.gif" alt="Video Game Health Bar in the shape of a sword" text="A sword shaped health bar with a broken sword hilt as a base" />
+              <PixelArt src="https://samerportfoliobucket.s3.us-east-2.amazonaws.com/RockGuy.gif" alt="Sentient Rock walks forward" text="" />
+              <PixelArt src="https://samerportfoliobucket.s3.us-east-2.amazonaws.com/attackAnimation_RockGuy.gif" alt="Sentient Rock atacks by propelling itself off the floor and throwing it's fist forward" text=""/>
+              <PixelArt src="https://samerportfoliobucket.s3.us-east-2.amazonaws.com/merchant.gif" alt="Merchant smokes Shisha" text=""/>
+              <PixelArt src="https://samerportfoliobucket.s3.us-east-2.amazonaws.com/GAME+HEALTH+BAR.gif" alt="Video Game Health Bar in the shape of a sword" text="" />
             </div>
           </div>
           <div>Made with NextJS, TailwindCSS, AnimeJS and GSAP</div>
@@ -150,3 +168,5 @@ export default function Home() {
     </div>
   );
 }
+
+// &rsquo;
