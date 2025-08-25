@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react';
 import "./projectCard.css";
 
-const ExperienceCard = ({ job, point1, point2, point3, href }) => {
+const ExperienceCard = ({ job, date, point1, point2, point3, point4, point5, href }) => {
   useEffect(() => {
     const cardUpdate = (e) => {
       const $card = e.currentTarget;
@@ -19,46 +19,48 @@ const ExperienceCard = ({ job, point1, point2, point3, href }) => {
       var w = dimensions.width;
       var px = Math.abs((100 / w) * l);
       var py = Math.abs((100 / h) * t);
-  
+
       $card.style.setProperty('--pointer-x', `${px}%`);
       $card.style.setProperty('--pointer-y', `${py}%`);
     };
-  
+
     const cards = document.querySelectorAll('.card');
-  
+
     cards.forEach((card) => {
       card.addEventListener('mousemove', cardUpdate);
       card.addEventListener('touchmove', cardUpdate, { passive: true });
-  
+
       return () => {
         card.removeEventListener('mousemove', cardUpdate);
         card.removeEventListener('touchmove', cardUpdate);
       };
     });
   }, []);
-  
 
-      const handleClick = (e) => {
-        e.preventDefault();
-        window.open(href, '_blank');
-      };
-
-    return (
-        <a href={href} onClick={handleClick} className="no-underline">
-            <div className="card group mb-10 transition bg-[#2E485C]/10 
-            bg-opacity-10 backdrop-blur-sm bg-clip-padding 
-            backdrop-filter shadow-xl rounded-lg p-6 mx-auto cursor-pointer sm:pointer-events-none lg:pointer-events-auto">
-                <div className="inside">
-                    <h2 className="group-hover:text-[#8ce9b1] text-slate-200 font-semibold mb-2">{job}</h2>
-                    <div className="flex flex-col space-y-2">
-                    <p>{point1}</p>
-                    <p>{point2}</p>
-                    <p>{point3}</p>
-                </div>
-                </div>
-            </div>
-        </a>
-    );
+  const handleClick = (e) => {
+    e.preventDefault();
+    window.open(href, '_blank');
   };
-  
-  export default ExperienceCard;
+
+  return (
+    <a href={href} onClick={handleClick} className="no-underline">
+      <div className="card group mb-10 transition bg-[#2E485C]/10 
+        bg-opacity-10 backdrop-blur-sm bg-clip-padding 
+        backdrop-filter shadow-xl rounded-lg p-6 mx-auto cursor-pointer sm:pointer-events-none lg:pointer-events-auto">
+        <div className="inside">
+          <h2 className="group-hover:text-[#8ce9b1] text-slate-200 font-semibold mb-1">{job}</h2>
+          {date && <p className="text-slate-400 text-sm mb-3">{date}</p>}
+          <div className="flex flex-col space-y-2">
+            {point1 && <p>{point1}</p>}
+            {point2 && <p>{point2}</p>}
+            {point3 && <p>{point3}</p>}
+            {point4 && <p>{point4}</p>}
+            {point5 && <p>{point5}</p>}
+          </div>
+        </div>
+      </div>
+    </a>
+  );
+};
+
+export default ExperienceCard;

@@ -45,12 +45,12 @@ const ProjectCard = ({ title, point1, techPoints, href }) => {
 
   return (
     <a href={href} onClick={handleClick} className="no-underline">
-    <div className="lg:card group mb-10 transition bg-[#2E485C]/10 
-    bg-opacity-10 backdrop-blur-sm bg-clip-padding 
-    backdrop-filter shadow-xl rounded-lg p-6 mx-auto cursor-pointer sm:pointer-events-none lg:pointer-events-auto">
-        <div className="lg:inside">
-            <h2 className="group-hover:text-[#8ce9b1] text-slate-200 font-semibold mb-2">{title}</h2>
-            <div className="flex flex-col space-y-2">
+    <div className="card group mb-10 transition bg-[#2E485C]/10 
+      bg-opacity-10 backdrop-blur-sm bg-clip-padding 
+      backdrop-filter shadow-xl rounded-lg p-6 mx-auto cursor-pointer sm:pointer-events-none lg:pointer-events-auto">
+        <div className="inside">
+          <h2 className="group-hover:text-[#8ce9b1] text-slate-200 font-semibold mb-2">{title}</h2>
+          <div className="flex flex-col space-y-2">
             <p>{point1}</p>
           </div>
           <div className="flex flex-wrap gap-2 mt-4">
@@ -60,6 +60,7 @@ const ProjectCard = ({ title, point1, techPoints, href }) => {
           </div>
         </div>
       </div>
+
     </a>
   );
 };
