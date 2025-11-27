@@ -43,7 +43,7 @@ export default function Home() {
               I&rsquo;m a developer who cares about building clean, thoughtfully designed products that are intuitive and enjoyable to use.
             </p>
             <p className="mb-4">
-              Today, I&rsquo;m a Software Developer at <a href="https://www.netrevenue.io/" target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer hover:text-green-200">NetRevenue</a>, where I work on <span href="https://www.salesvue.io/" className="text-slate-200 cursor-pointer hover:text-green-200">Salesvue.io</span>, a sales engagement platform designed to help teams manage leads, automate follow-ups, and streamline customer communication. My role involves building and maintaining core features, integrating third-party services, and ensuring the platform is reliable, scalable, and user-friendly.
+              Recently, I worked as a Software Developer at <a href="https://www.netrevenue.io/" target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer hover:text-green-200">NetRevenue</a>, where I built backend systems and integrations for <span className="text-slate-200 cursor-pointer hover:text-green-200">Salesvue.io</span>, a sales engagement platform. I focused on webhook processing, OAuth flows, subscription management, and third-party API integrations with services like GoHighLevel, Stripe, and Calendly.
             </p>
             <p className="mb-4">
               In the past, I&rsquo;ve built <a href="https://github.com/SamerSawan/bookmarkd" target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer hover:text-green-200">Bookmarkd</a>, a book club app for sharing reads with friends, and a <a href="https://bappleboi.itch.io/unseen-alchemist" target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer hover:text-green-200">video game</a> during a game jam, along with other personal and hackathon projects. I also interned at <a href="https://www.thedevfactory.ai/" target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer hover:text-green-200">TheDevFactory</a>, earned my AWS Cloud Practitioner certification, and graduated from <a href={"https://mcgill.ca"} target="_blank" rel="noreferrer" className="text-slate-200 cursor-pointer hover:text-green-200">McGill University</a> in Software Engineering.
@@ -63,10 +63,10 @@ export default function Home() {
               <li>
                 <ExperienceCard 
                   job={"Software Developer @ NetRevenue"} 
-                  date={"Mar 2025 – Present"} 
-                  point1={"Build and maintain backend services for Salesvue.io, a sales engagement platform used to manage leads and automate workflows."}
-                  point2={"Design and implement integrations with third-party services such as Stripe and Whop, supporting subscription billing, membership synchronization, and API event processing."}
-                  point3={"Introduce and advocate for backend testing practices, improving release reliability and team confidence in deployments."}
+                  date={"Mar 2025 – Nov 2025"} 
+                  point1={"Built backend systems for Salesvue.io, including webhook processing for GoHighLevel, Calendly, and Zoom with OAuth 2.0 flows and automated retry logic, processing 10k+ API calls daily."}
+                  point2={"Engineered custom webhook solution that increased dial reporting accuracy from 30% to 95%, enabling accurate sales performance tracking."}
+                  point3={"Developed subscription management system integrating Whop API with seat proration, dunning processes, and payment failure recovery."}
                   href={"https://www.netrevenue.io/"} 
                 />
               </li>
